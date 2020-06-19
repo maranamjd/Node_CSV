@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>
+			<% if(locals.page){ %>
+				<% if(page === 'index'){ %>
+					Test | Home
+				<% }else if(page === 'about'){ %>
+					Test | About
+				<% }else if(page === 'contact'){ %>
+					Test | Contact
+				<% }else if(page === 'profile'){ %>
+					Test | Profile
+				<% }else if(page === 'messages'){ %>
+					Test | Messages
+				<% } %>
+			<% } %>
+		</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/css/style.css">
+
+		<style media="screen">
+		body {
+			font-family: tahoma, "Helvetica Neue", Helvetica, sans-serif;
+		}
+		</style>
+
+	</head>
+	<body>
+
+    <% include inc/navbar.ejs %>
+    <%- body %>
+
+
+	<script type="text/javascript" src="/assets/js/events.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

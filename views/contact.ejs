@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+
+      <form action="/sendMessage" method="post">
+        <div class="form-group">
+          <label for="#name">Name: </label>
+          <input type="text" name="name" placeholder="input name" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="#email">Email: </label>
+          <input type="email" name="email" placeholder="input email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="#message">Message: </label>
+          <textarea name="message" placeholder="input your message" id="message" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" name="submit" value="submit" class="btn">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
